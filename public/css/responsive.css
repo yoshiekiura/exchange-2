@@ -1,0 +1,13 @@
+/* ----
+| RESPONSIVE STYLES
+| VERSION: 1.0;
+---- */
+/* ----------------------------------- ----------------------------------- */
+
+/* -----------------------------------  || RESPONSIVE STYLES || ----------------------------------- */
+/*
+| DEVICE WIDTH
+*/
+@media screen and (device-width: 1024px){
+    body {background: red;}
+}

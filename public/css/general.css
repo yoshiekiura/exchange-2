@@ -1,0 +1,731 @@
+/**/
+/* --- INCLUDE FONTS --- */
+
+@font-face {  font-family: OpenSans;  src: url(fonts/OpenSans.ttf);  }
+@font-face {  font-family: OpenSansLight;  src: url(fonts/OpenSansLight.ttf);  }
+@font-face {  font-family: OpenSansBold;  src: url(fonts/OpenSansBold.ttf);  }
+@font-face {  font-family: "Rubl Sign"; src: url(fonts/ruble.eot); }
+
+span.rur { font-family: "Rubl Sign"; text-transform: uppercase; // text-transform: none;}
+span.rur span { position: absolute; overflow: hidden; width: .45em; height: 1em; margin: .1ex 0 0 -.55em; // display: none; }
+span.rur span:before { content: '\2013'; }
+
+/* ------------------------ MAIN STYLES ------------------------*/
+html, body {background-color: #fafafa!important; font-family: OpenSansLight;}
+.text-align-center {text-align: center}
+.text-color-yellow {color: yellow;}
+.font-bold {font-weight: bold}
+
+/* ------------------------ HEADER STYLES ------------------------*/
+.wrap-header-first {padding: 30px 0 30px 0;}
+.logo-box > div {float: left}
+.logo-box p {line-height: 58px; margin-left:10px;position: relative;top: -6px;}
+.header-btns {float: right; padding: 17px 0 17px 0;}
+
+/* ------------------------ PROMOTION BOX STYLES (HOME PAGE) ------------------------*/
+.prom-box {
+    background: #438ac5;
+    color:#ffffff;
+}
+.prom-box h1 {margin-top: 30px;}
+.promo-btns {display: flex;  margin: 20px 0 20px 0;}
+.ct-btns a.button-yellow {
+    color: yellow;
+    border-color: yellow;
+    background: none;
+    float: right;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.ct-btns a.button-yellow:hover {
+    color: #ffffff;
+    border-color: #000;
+}
+.exchange-search {background: #ffffff; margin-top: 40px;padding: 20px 40px 0 40px;}
+.selectors h4 {
+    font-family: OpenSansLight;
+    font-size: 14px;
+    font-weight: bold;
+}
+.select_arrow {
+    margin-left: -22px;
+    margin-top: 6px;
+    position: absolute;
+    left: 50%;
+}
+
+/* ------------------------ FOOTER ------------------------*/
+
+footer {background: #428BCA; padding: 20px 0 20px 0; color: #ffffff;}
+footer ul {
+    margin-top:15px;
+    display: inline-block;
+    float: right;
+}
+footer ul li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+footer ul li:last-child {margin-right: 0;}
+footer li a {color: #ffffff;}
+#search-result > thead > tr > th {border: 0;}
+#search-result > thead {background: #fafafa}
+.red > td:last-child {background: red; color:#ffffff;}
+.white > td:last-child {background: white}
+.green > td:last-child {background: green; color:#ffffff}
+
+/* ------------------------ REGISTER MODAL ------------------------*/
+
+#modals {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(91, 113, 142, 0.94);
+    z-index: 1024;
+}
+.modal-backdrop {background: rgba(91, 113, 142, 0.94);  }
+#register div.modal-content {background: #438ac5; color:#ffffff;padding: 40px;border-radius: 0px; margin-top: 100px;}
+#register div.modal-header h2 {font-family: "OpenSansLight";  font-size: 36px;  font-weight: normal;  }
+#register div.modal-dialog {min-width: 78%;}
+#register div.modal-header button {color: #ffffff}
+#register div.header-box {width: 100%; display: inline-block}
+#register div.header-box h2 {float: left}
+#register div.header-box button {float: right}
+.modal-header {border-color: transparent}
+.inputs-wrapper {display: inline-block;width: 100%;margin: 0px;padding: 0px;}
+.inputs-wrapper li {list-style: none;}
+.modal-footer-box {width: 97%;  margin: 20px auto;}
+.modal-footer-box a { color: #ffffff}
+.modal-footer-box button {float: right}
+
+/* ------------------------ AUTHORISATION MODAL ------------------------*/
+
+#login div.modal-content {background: #438ac5;  padding: 40px;border-radius: 0px; margin-top: 100px;}
+#login div.modal-header {margin: 0 0 20px 0; padding: 0;display: inline-block;width: 100%;border-color: transparent;}
+#login div.modal-header h2 {margin: 0; float: left}
+#login div.modal-header button {float: right; color: #ffffff}
+#login div.enter-btns {margin-top: 20px;}
+#login div.enter-btns a {color: #ffffff;}
+#login div.enter-btns button {float: right}
+
+/* --------------------------------------- | BEGIN PAGES STYLES | ---------------------------------------*/
+
+/* --- CONTACTS PAGE ---*/
+
+.contacts-form {background: #ffffff; padding: 40px;margin-bottom: 40px;}
+.margin-top-20 {margin-top: 20px;}
+.contacts-form textarea {  height: 200px; resize: none;  }
+#contacts-form ul {float: right; margin-top: 20px;}
+#contacts-form ul li {list-style: none; float:left; margin-right: 15px;}
+
+/* --- SUPPORT PAGE ---*/
+
+.support-page {background: #ffffff;padding: 20px; margin-bottom: 40px;}
+.support-page ul {margin-top: 20px; padding: 0;}
+.support-page li {width: 100%;  list-style: none; border-bottom: solid 1px #dddddd;  }
+.support-page div.panel.panel-default,
+.support-page div.panel-heading { border-color: transparent; background: none; }
+
+/*---  **************************** SAME FIX *********************************  ---*/
+
+.modal-header {border-bottom: 0!important;}
+.select_arrow {position: absolute!important;}
+.agree {font-weight: normal}
+.help-block,.fv-form-bootstrap .help-block {color: rgba(0,0,0,0.8)!important;}
+.fv-form-bootstrap .fv-icon-no-label {    right: 15px;}
+.modal-content h2, .modal-content label {color: #ffffff}
+.float-right {float: right; display: inline-block}
+.navbar {margin-bottom: 0!important; border-radius: 0!important;}
+.yellow-bg {background: yellow;}
+.padding-left-20 {padding-left: 20px;}
+.payment_info p, .payment_info h3 {padding: 0; margin: 0;}
+.page_content-box {background: #FFFFFF}
+.bold {font-weight: bold}
+.abs {position: absolute}
+.abs-right {right: 0px;}
+#select-ps-from {display: none}
+#ps_bank_from {display: none}
+.st_select_bank select.ps_bank_choise {display: block!important;}
+.st_select_bank input.wallet_type_input {display: none}
+.st_select_bank button.select-ps-btn {display: none}
+.st_bank_selected select.ps_bank_choise {display: none!important;}
+.st_bank_selected input.wallet_type_input {display: block}
+.st_bank_selected button.select-ps-btn {display: block!important;}
+.st_without_bank button.select-ps-btn,
+.st_without_bank select.wallet_type_input {display: none!important;}
+.st_without_bank input.wallet_type_input {display: block}
+
+/* ---------- / BOOTSTRAP FIX / ---------- */
+.form-control {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border-color: #dddddd;
+}
+.table { border-bottom: 1px solid #ddd;}
+.table thead tr th {border-bottom: 0px!important;}
+td.status {font-family: "OpenSansLight", Arial}
+td.status a {text-decoration: none}
+
+/* --------------------------------------- | MAKE EXCHANGE REQUEST | ---------------------------------------*/
+
+.ex_sec_step p, .ex_sec_step h4 {font-family: "OpenSans", Arial; line-height: 34px!important;  }
+.total_exchange_row { width: 90%; margin: 40px auto 40px auto;  }
+.total_exchange_row > div.row > div:first-child { padding: 35px 35px 35px 35px;  }
+.total_exchange_row > div.row > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 123px;
+    /*padding: 51px 20px 51px 0px;*/
+}
+label.confirm_payment { margin-bottom: 20px!important; }
+.exchange_request_info_box {padding: 30px; background: #FFFFFF; margin-bottom: 20px;}
+.total_exchange_system_wallet_row { display: inline-block; width: 100%; margin: 20px 0px!important; }
+.reguest_btns {margin-bottom: 45px; display: inline-block; width: 100%;}
+.request-search-result tbody tr {
+    cursor: pointer;
+    -webkit-transition: background 1s linear;
+    -moz-transition: background 1s linear;
+    -ms-transition: background 1s linear;
+    -o-transition: background 1s linear;
+    transition: background 1s linear;
+}
+.request-search-result tbody tr:hover {color: #979797}
+.request_title h3 {
+    font-family: "OpenSans", Arial;
+    font-size: 32px;
+    padding: 20px 0 0px 35px;
+}
+.payment_info h4, .payment_info p {
+    font-family: "OpenSans", Arial;
+    line-height: 34px;
+}
+ul.rowed {display: inline-block;}
+ul.rowed > li { float: left; list-style: none;  }
+ul.rowed.serv li {margin-right: 20px;}
+.rowed.serv p {
+    font-family: "OpenSans", Arial;
+    font-size: 14px;
+}
+.exchange-search {
+    padding: 30px 40px 40px 40px!important;
+    margin-bottom: 40px;
+    font-family: "OpenSans", Arial;
+}
+.request-search-result tbody tr td:first-child {
+    background: #fafafa;
+}
+.user-panel {background: #FFFFFF;}
+.page-title-st-1 {
+    font-family: 'OpenSans', Arial;
+    font-size: 32px;
+    padding: 20px 0 0px 35px;
+}
+.light_green-bg {
+    background: #fafdff;
+}
+.auth_user_settings {
+    padding: 35px;
+    margin-top: 40px;
+}
+.auth_user_settings label {
+    font-family: Arial;
+    font-weight: bold!important;
+}
+.form-profile_edit a {margin-top: 21px;}
+.search_title { font-family: "OpenSans", Arial; font-size: 20px; margin: 30px;}
+.search_rows div.row { margin: 0; }
+.search_result_table {margin: 30px;}
+.user-panel {margin-bottom: 30px;}
+tr.executed td.status a {color: #41c75c}
+tr.awaiting_payment td.status a {color: #ffec21}
+.user_panel_search tbody tr td:first-child {background: #fafafa;}
+
+/* --------------------------------------- | DASHBOARD STYLES | ---------------------------------------*/
+
+.dashboard-content {background: #FFFFFF; margin-bottom: 40px;}
+.dashboard-content h3.top-title {font-family: "OpenSans",Arial; font-size: 32px; padding: 20px 0px 0px 35px;}
+.dashboard-content h3.page-title-st-2 {font-family: "OpenSans",Arial;font-size: 20px;margin: 0 0 30px 0;}
+.dashboard-content div.dash-navigation ul,
+.user-panel div.dash-navigation ul {width: 100%; display: inline-block;margin: 30px 0px 30px 0px;}
+.dashboard-content div.dash-navigation ul li,
+.user-panel div.dash-navigation ul li {list-style: none; float: left;margin-right: 10px;}
+.dashboard-content table.table thead,
+.dashboard-content table.table tbody tr td:first-child {background: #fafafa;}
+.dashboard-content table.table thead tr th:first-child,
+.dashboard-content table.table tbody tr td:first-child {text-align: center}
+#dashboard-content-box, .dashboard-content-box {padding: 0 40px 40px 40px!important;}
+.search_result_table div.container.form_selector {margin: 0 0 30px 0;  padding: 0;  }
+.buttons_row {display: inline-block; margin: 0; padding: 0; float: right}
+.buttons_row li {float: left; list-style: none; margin-right: 10px;}
+.align-right {text-align: right}
+th.align-right {padding-right: 20px!important;}
+.dashboard-content table.questions_rows thead tr th {border-top: 1px solid #ddd!important; background: #FFFFFF;}
+.dashboard-content table.questions_rows thead tr th, .dashboard-content table.questions_rows tbody tr td
+{border: 1px solid #ddd }
+.dashboard-content table.questions_rows thead tr th:last-child,
+.dashboard-content table.questions_rows tbody tr td:last-child {min-width: 120px;}
+.dashboard-content table.questions_rows tbody tr td:last-child ul {margin: 16px;}
+.dashboard-content table.questions_rows tbody tr td:first-child {background: #FFFFFF}
+.dashboard-content table.questions_rows tbody tr td:first-child,
+.dashboard-content table.questions_rows tbody tr td:nth-child(2) {padding: 20px;}
+.dashboard-content {padding: 0px!important;}
+.dashboard-content div.auth_user_settings {margin: 20px 0!important;}
+#editor {
+    max-height: 250px;
+    height: 250px;
+    background-color: white;
+    border-collapse: separate;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: content-box;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    outline: none;
+    font-family: "OpenSans",Arial;
+    overflow: auto;
+}
+#voiceBtn {
+    width: 20px;
+    color: transparent;
+    background-color: transparent;
+    transform: scale(2.0, 2.0);
+    -webkit-transform: scale(2.0, 2.0);
+    -moz-transform: scale(2.0, 2.0);
+    border: transparent;
+    cursor: pointer;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+div[data-role="editor-toolbar"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdown-menu a {cursor: pointer; }
+.content-row div.row {margin: 0}
+.margin-40 {margin: 0 40px;}
+.page-title {font-family: 'OpenSans', Arial; font-size: 32px!important; padding: 20px 0px; margin: 0!important;  }
+.row-st-2 {display: inline-block; width: 100%;}
+.row-st-2 > div {width: 50%; float: left}
+.exchange-row {margin-top: 20px;}
+.exchange-row p {line-height: 30px; margin: 0; padding-left: 10px;}
+.margin-btn {margin: 26px 0 26px 0!important;}
+.payments-rows {width: 100%; display: inline-block; padding: 0;}
+.payments-rows li {list-style: none; float: left; margin-right: 20px;}
+.payments-rows li p { font-family: 'OpenSans', Arial; font-size: 22px;  }
+.change_status_btns { margin: 15px 0; width: auto; float: right; }
+.change_status_btns a.succeed {color: green;}
+.change_status_btns a.reject {color: #d24f42;}
+.light-red {    background: #fffefa;}
+.no-margin {margin: 0!important;}
+.dash_exch h4 {font-weight: normal!important; margin-bottom: 0px;}
+.dash_exch > div:last-child {background: none!important;}
+.exch-mail-link { margin: 26px 0; text-align: center; }
+.sub-title {font-family: "OpenSans";  margin-bottom: 20px;}
+.title_st1 {
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0 10px;
+}
+.margin-top-20 {margin-top: 20px;}
+.row-st-3 > div { padding: 0 0 20px 0!important; }
+.st-btns-2 {margin: 20px 0 0 0}
+.sp-row {width: 100%; display: inline-block;margin: 20px 0;}
+.sp-row h4, .sp-row p { float: left; line-height: 20px; margin: 0 10px 0 0; }
+.sp-row h4 {font-weight: bold}
+.st-2 {margin: 0 40px 40px;}
+.change_status_btns.success { position: relative; }
+.change_status_btns.success:before {
+    width:50px;
+    height: 50px;
+    background: url('../images/ui/success.png') no-repeat;
+    position: absolute;
+    top: 8px;
+    left: -59px;
+    content: '';
+    background-size: 100%;
+}
+.change_status_btns.success li { margin-top: 20px; }
+.change_status_btns.success li.success-li {display: none;}
+.padd-row {margin: 20px 0;}
+button.padd-row {float: right}
+
+/* --------------------------------------- | DASHBOARD MODALS | ---------------------------------------*/
+
+.modal-box div.modal-content {background: #438ac5; color:#ffffff;padding: 30px;border-radius: 0px; margin-top: 100px;}
+.modal-box div.modal-header h2 {font-family: "OpenSansLight";  font-size: 36px;  font-weight: normal;  }
+.modal-box div.modal-dialog {min-width: 78%;}
+.modal-box div.modal-header button {color: #ffffff}
+.modal-box div.header-box {width: 100%; display: inline-block}
+.modal-box div.header-box h2 {float: left}
+.modal-box div.header-box button {float: right}
+.modal-box div.modal-footer-box {margin: 10px auto;}
+.error-log {float: left; color: darkred;}
+#editWallet.system ul.inputs-wrapper li:nth-child(3) {display: none}
+#editWallet.personal ul.inputs-wrapper li:nth-child(3) {display: block}
+
+.question-box {width: 100%;/* height: 500px; */ background: #FFFFFF;border-radius: 10px;}
+.modal-dialog div.content-box {padding: 20px;}
+.modal-header-handler {display: inline-block; width: 100%;border-bottom: solid 1px #cfcfcf;padding-bottom: 20px;}
+.modal-header-handler h4, .modal-header-handler button {font-family: "OpenSans",Arial}
+.modal-header-handler h4 {font-size: 24px; float: left;max-width: 80%;}
+.modal-header-handler button {float: right}
+.modal-content-box { padding-top: 20px;}
+.ajax-hangler,
+.ajax-handler {position: relative}
+.ajax-load:before {
+    width:100%;
+    height:100%;
+    background: url('../images/ui/ajax-loader.gif') no-repeat, rgba(255,255,255,0.8);
+    background-size: 8%;
+    background-position: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:2;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    content: ''!important;
+    display: inline-block!important;
+}
+.ajax-success:before {
+    width:100%;
+    height:100%;
+    background: url('../images/ui/success.png') no-repeat, rgba(255,255,255,0.8);
+    background-size: 8%;
+    background-position: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:2;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    content: ''!important;
+    display: inline-block!important;
+}
+.ps_com_form {display: inline-block;width: 100%;}
+.ps_com_form {font-family: "OpenSans", Arial;padding: 10px;border: solid 1px rgba(0,0,0,0.15);border-radius: 10px;}
+.ps_com_form h4.com_title {font-family: "OpenSansLight", Arial; font-size: 24px; margin: 0; padding: 20px 0;}
+.ps_com_form button {margin-top: 24px;}
+.tween-rows {margin-top: 20px;}
+.tween-rows h4 {font-family: "OpenSans", Arial; font-size: 20px;}
+.ps_result {display: inline-block; padding: 15px;  width: 100%;}
+.tw-container div.last {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+}
+.res_title {font-family: "OpenSans", Arial}
+.info-row h4 {font-family: "OpenSansLight", Arial}
+
+.make_request.container form {
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.make_request.container.first form#exchange_request_step1 {display: block}
+.make_request.container.first form#exchange_request_step2 {display: none}
+
+.make_request.container.second form#exchange_request_step2 {display: block}
+.make_request.container.second form#exchange_request_step1 {display: none}
+.ex_sec_step h4, .ex_sec_step p {float: left}
+.ex_sec_step h4 {    padding: 0 10px 0 0; margin: 0px;}
+.total_exchange_row h3 {font-size: 18px;}
+.turn-off {display: none}
+.row.payment_info.row_st-2 > div {padding: 0 5px;}
+.make_request.container {position: relative}
+.short_margin div {padding: 0px 5px;}
+.short_margin div:first-child,
+.short_margin div:nth-child(2) {padding: 0 5px 0px 15px;}
+.short_margin p strong {font-size: 20px!important;}
+.row-box {display: inline-block}
+.sub-rows {    margin: 0 15px;}
+#request_replay_form {position: relative}
+
+/* --- REPLAY FOR REQUEST --- */
+
+.order-replay-wrapper {padding: 0 40px;}
+.order-replay-wrapper h4.title {
+    font-family: "OpenSans";
+    margin: 20px 0;
+    font-size: 23px;
+}
+.order-replay-wrapper div.panel-heading {
+    background: #fefefe;
+}
+.order-replay-wrapper div.panel-default {
+    border-color: transparent;
+}
+.req_ans_link p {
+    display: inline-block;
+    color: #9c9c9c;
+}
+.light_red {background: #fcf9ed;}
+.float-left {float: left}
+.row-box-2 {width: 100%; display: inline-block; position: relative}
+.row-box-2 li {list-style: none; float: left}
+
+/* --- FIX  ---*/
+#request_replay_form > div.row > div {  height:774px;}
+.row.exchange_request_total > div {height: 108px;}
+.reguest-total-box h4 p {
+    font-weight: normal;
+    text-transform: none;
+    font-size: 14px;
+    padding-top: 5px;
+    margin: 0!important;
+    float: none!important;
+}
+.auth-box-modal div.modal-dialog {min-width: 50%;}
+.auth-box-modal div.modal-header {padding: 15px 0; display: inline-block; width: 100%;}
+.auth-box-modal div.modal-header h4 {
+    font-family: "OpenSansLight";
+    font-size: 30px;
+    font-weight: normal;
+}
+.auth-box-modal div.modal-header p {color: #ededed;}
+.md-btn {
+    width:100%;
+    height: 20px;
+    padding: 15px 36%;
+    font-family: "OpenSans";
+    display: inline-table;
+    color: #ffffff;
+    border: dashed 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.md-btn:hover {
+    text-decoration: none;
+    color: yellow;
+    border-color: yellow;
+}
+.buttons-modal-row > div.row {display: inline-block; width: 100%;}
+
+/**/
+.d_red {background: #ca4242; color: #FFFFFF;}
+.d_green {background: #42ca5b; color: #FFFFFF;}
+.d_yellow {background: #efed62; color: #FFFFFF;}
+.exchange-box-st2 form > div.row > div { height:820px!important;}
+.hidden-input {display: none!important;}
+.select_wallet_row_box.chosen select {display: none!important;}
+.select_wallet_row_box.chosen input.switch-input {display: block!important;}
+.select_wallet_row_box {position: relative}
+.select_wallet_row_box a.switch-btn {
+    position: absolute;
+    line-height: 32px;
+    padding: 0 10px;
+    top: 0px;
+    right: 15px;
+    background: rgb(255,255,255);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "Arial";
+    color: rgba(0,0,0,0.8);
+    display: none;
+}
+.select_wallet_row_box a.switch-btn {display: none;}
+.select_wallet_row_box.chosen a.switch-btn {display: block;}
+/**/
+.select_wallet_row_box.type_only select {display: none!important;}
+.select_wallet_row_box.type_only input.switch-input {display: block!important;}
+.select_wallet_row_box.type_only a.switch-btn {display: none!important;}
+/**/
+.panel-content-box {margin: 30px 40px;}
+.panel-page-title-st2 {
+    font-family: "OpenSansLight", Arial;
+    font-size: 28px;
+    padding: 20px 0px;
+    margin: 0!important;
+}
+.st-btn-1 {right: 5px!important;}
+.st-btn-2 {right: 15px!important;}
+.tbl-st-1 {margin: 0 30px;}
+.light_row_msg td {
+    background: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+.panel-view_request ul.rowed {margin: 0}
+.panel-view_request ul.rowed li {margin: 0; padding: 0}
+.panel-view_request ul.rowed li:first-child {width: 70%;}
+.panel-view_request ul.rowed li:last-child {width: 30%;}
+.status-yellow p {color:yellowgreen}
+.status-red p {color:red}
+.status-green p {color:green}
+.order-replay-wrapper.panel-st {padding: 0 20px;}
+.panel-st div.panel-heading { padding: 15px 0 15px 0;}
+.panel-st div.panel div.row h4 {
+    font-family: "OpenSans", Arial;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.panel-st div.panel div.row p {
+    font-family: 'OpenSans', Arial;
+    font-size: 14px;
+}
+.panel-st div.panel div.row strong {
+    font-size: 20px;
+    font-weight: 500;
+}
+.request-answer-box h4.title {
+    margin: 0 20px;
+    font-family: "OpenSans",Arial;
+    font-weight: normal;
+    font-size: 16px;
+}
+.tex-align-right {text-align: right}
+.margin-st1 {margin-top: 20px;}
+.table {
+    font-family:"OpenSans",Arial;
+}
+.form-st-1 input,
+.form-st-1 select {margin-bottom: 10px;}
+.ps_edit_currency tr > td {height: 51px;}
+.ps_edit_currency tr > td:nth-child(3){
+    min-width: 240px;
+}
+.ps_edit_currency tr > td p,
+.ps_edit_currency tr > td ul {
+    padding: 7px 0;
+    margin: 0;
+}
+.wallet_row td:nth-child(3) input {display: none}
+.wallet_row td:nth-child(4) ul.buttons_row li:first-child {display: none}
+.wallet_row td:nth-child(3) p {display: block;}
+.wallet_row.edit_this td:nth-child(3) input {display: block}
+.wallet_row.edit_this td:nth-child(3) p {display: none}
+.wallet_row.edit_this td:nth-child(4) ul.buttons_row li:first-child {display: block}
+.wallet_row.edit_this td:nth-child(4) ul.buttons_row li:nth-child(2) {display: none}
+.buttons_row button {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: green;
+}
+.check-icons {display: none!important;}
+div.form-group.has-success span.success {display: block!important;}
+div.form-group.has-error span.error {display: block!important;}
+/**/
+.title-row.st-1 {margin: 10px 0;}
+.btn-st {
+    display: inline-block;
+    float: right;
+}
+.btn-st li {list-style: none; float: left; margin-right: 10px;}
+.footer-box img, .footer-box p {  float: left;  }
+.footer-box p {
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.wallet_row a {cursor: pointer}
+#password_reset_form div.form-group > div:first-child {padding: 0}
+#password_reset_form a {
+    font-family: "OpenSans";
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+#password_reset_form a:hover {
+    color: #cfcfcf;
+}
+.btn-black {
+    background: #000000;
+    border:none;
+}
+.btn-black:hover {
+    color: #ffffff!important;
+    background: #4e4e4e;
+}
+.btn-progress {position: relative}
+.btn-progress:after {
+    content: '';
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/ui/ajax-loader.gif") no-repeat, rgba(0,0,0,0.6);
+    top:0;
+    left:0;
+    border-radius: 4px;
+    background-size: 22%;
+    background-position: 50%;
+}
+#reset_password_form_em label {font-weight: normal}
+.btn-black {color: #ffffff!important;}
+.auth_user_settings .btn {display: inline-block}
+.auth_user_settings .btn.edit-btn {display: none}
+#edit_profile.edit .btn.edit-btn {display: inline-block}
+#edit_profile.edit .btn {float: left; margin-top: 15px; margin-right: 10px;}
+#edit_profile {position: relative}
+#edit_profile i {display: none}
+#edit_profile.edit i {display: block}
+#change_sys_commission {position: relative}
+.contacts-form {position: relative}
+
+.ex_row {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    line-height: 34px;
+}
+
+.page-wrapper {
+    min-height: calc(100vh - 130px);
+}
+
+#resetPassword div.modal-content {background: #438ac5; color:#ffffff;padding: 40px;border-radius: 0px; margin-top: 100px;}
+#resetPassword div.modal-header h2 {font-family: "OpenSansLight";  font-size: 36px;  font-weight: normal;  }
+#resetPassword div.modal-dialog {min-width: 78%;}
+#resetPassword div.modal-header button {color: #ffffff}
+#resetPassword div.header-box {width: 100%; display: inline-block}
+#resetPassword div.header-box h2 {float: left}
+#resetPassword div.header-box button {float: right}
+
+#forgotPassword div.modal-content {background: #438ac5;  padding: 40px;border-radius: 0px; margin-top: 100px;}
+#forgotPassword div.modal-header {margin: 0 0 20px 0; padding: 0;display: inline-block;width: 100%;border-color: transparent;}
+#forgotPassword div.modal-header h2 {margin: 0; float: left}
+#forgotPassword div.modal-header button {float: right; color: #ffffff}
+#forgotPassword div.enter-btns {margin-top: 20px;}
+#forgotPassword div.enter-btns a {color: #ffffff;}
+#forgotPassword div.enter-btns button {float: right}
+
+.key strong {
+    color: yellow;
+    font-weight: bold;
+}

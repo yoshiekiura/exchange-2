@@ -1,0 +1,138 @@
+/* --- PANEL STYLES --- */
+#events_check > div {
+    float:left;
+    margin: 10px 15px 15px 0;
+}
+.form-profile_edit label {font-weight: 500;}
+.form-profile_edit input.submit {margin-top: 15px;}
+#search_order {margin-bottom: 40px;}
+#search_order ul li label {font-weight: 500;}
+.user_panel_search td.status {background: #003c6e; color: #ffffff;}
+.user_panel_search tr.executed td.status {color: #36c75b;}
+.user_panel_search tr.awaiting_payment td.status {color: #ffec21}
+.user_panel_search tr.rejected td.status {color: #ca4250}
+/**/
+.form-profile_edit.edit input#edit_user_email,
+.form-profile_edit.edit input#edit_user_password,
+.form-profile_edit.edit div#events_check,
+.form-profile_edit.edit input.submit {display: block}
+.form-profile_edit.edit p,
+.form-profile_edit.edit a {display: none}
+/**/
+.form-profile_edit input#edit_user_email,
+.form-profile_edit input#edit_user_password,
+.form-profile_edit div#events_check,
+.form-profile_edit input.submit {display: none}
+.form-profile_edit a {display: block}
+/**/
+.form-profile_edit i.fv-form-bootstrap, .form-profile_edit i.fv-icon-no-label {top: 24px;}
+/**/
+.exchange_payment_info {width: 100%; margin: 0; padding: 0; display: inline-block}
+.exchange_payment_info li {list-style: none; float: left}
+.exchange_payment_info li:last-child {float: right}
+.service_information ul {width:100%; padding: 0; margin: 0;margin-bottom: 20px;}
+.service_information ul ol {list-style: none; width:100%; display: inline-block;padding: 0px;margin-bottom: 10px;}
+.service_information ul ol h4 {
+    font-family: 'OpenSans',Arial;
+    font-size: 14px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    font-weight: normal;
+    float: left;
+}
+.service_information ul ol h4.executed_payment {color: green;}
+.service_information ul ol h4.awaiting_payment {color: yellow;}
+.service_information ul ol h4.rejected_payment {color: red;}
+.ex-line p {margin: 0; padding: 0; line-height: 30px; font-weight: 500;}
+#pay_from_wallet h4, #pay_from_wallet p, #pay_to_wallet h4, #pay_to_wallet p  {float: left; margin: 0; line-height: 24px;}
+#pay_from_wallet h4, #pay_to_wallet h4 {padding: 0 10px 0 0;}
+#pay_from_wallet p, #pay_to_wallet p {padding: 0;}
+.no-padd p {padding: 0; margin: 0;}
+.confirm_exchange ul {margin: 0; padding: 0;}
+.confirm_exchange ul li {float: left; list-style: none}
+.confirm_exchange ul li:last-child {padding-left: 20px;}
+.confirm_exchange ul li h4, .confirm_exchange ul li p {margin: 0; padding: 0; line-height: 24px;}
+.reguest_btns button, .reguest_btns input {float: left; margin-right: 10px;}
+.make_request {margin-bottom: 20px;}
+.exchange_page h3 {font-family: 'OpenSans', Arial;}
+.exchange_page h3.exchange_number {
+    font-size: 32px;
+}
+.exchange_page div.payment_info,
+.exchange_request_total > div {padding: 20px 0 20px 0;}
+.reguest-total-box {width:90%; margin: 40px -15px 40px 5%;}
+.light_green {
+    background: #fafdff;
+}
+.light_green_with_st {
+    background: url('../images/ui/light_bg.jpg') no-repeat,#fafdff;
+    background-position: 0px 0px;
+    background-size: 100%;
+}
+.padding_top_70 {padding-top: 70px!important;}
+.payment_info p {font-family: 'OpenSans', Arial;font-size: 14px;}
+.payment_info p strong {font-size: 20px; font-weight: 500;}
+.payment_info h4 {font-size: 14px; font-weight: bold}
+.exchange_request_total ul {margin: 0; padding: 0; display: inline-block;margin-left: 36px;
+    display: flex; justify-content: space-between}
+.exchange_request_total ul li {list-style: none; float: left; margin-right: 10px;}
+.exchange_request_total p, .exchange_request_total h4, .exchange_request_total h5 {font-family: 'OpenSans', Arial}
+.exchange_request_total h4, .exchange_request_total h5 {font-size: 20px; text-transform: uppercase;}
+.exchange_request_total h4 {font-weight: bold}
+.exchange_request_total > div:last-child {background: #fffefa}
+.commission_info {
+    width: 90%;
+    margin: 15px 0 0 10%;
+}
+.exchange_page div.service_information, .light_red {background: #fdfcf7}
+.exchange_page div.exchange_request_title,
+.exchange_page div.payment_info {padding: 20px;}
+.ex-line {width:100%; margin: 0px!important;}
+.service_information div.content {padding: 10px;}
+.service_information div.service-exchange-info-box {background: #FFFFFF; padding: 20px;}
+.service_information div.content > h4 {
+    font-family: 'OpenSans', Arial;
+    font-size: 24px;
+}
+.make_request {background: #FFFFFF;}
+/**/
+.make_request h3.request_title {
+    font-family: 'OpenSans', Arial;
+    font-size: 32px;
+    padding: 20px 0 0px 35px;
+}
+.make_request div.exchange_row {
+    padding: 35px 35px 35px 35px;
+    font-family: "OpenSans",Arial;
+}
+.make_request div.exchange_row label {font-weight: bold;padding: 0;}
+.no-padding {padding: 0!important;}
+.checkbox label {font-weight: normal!important;}
+.exchange_order_make {
+    font-family: 'OpenSans', Arial;
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.exh_row_st1 {margin-bottom: 20px;}
+.exh_row_st1 p {padding-left: 37px;}
+.exh_row_st2 {
+    width: 100%;
+    margin: 0 auto 40px auto;
+    padding: 20px 0 20px 0;
+    background: #FFFFFF;
+    text-align: center;
+}
+.exh_row_st2 > div { width: 100%;  margin: auto;  }
+.exh_row_st2 p { font-family: 'OpenSans', Arial;  font-size: 14px; }
+.exh_row_st2 strong {font-size: 16px; font-weight: bold;}
+.make_request_btns {padding: 20px 0 60px 0;}
+.make_request_btns p {margin-bottom: 0px;}
+#amount_to_get h4 {margin: 0;}
+#amount_to_get h4, #amount_to_get p {float: left; line-height: 22px;}
+#amount_to_get p {margin-left: 10px;}
+
+.reguest-total-box {
+    width: 100%;
+    margin: 20px 20px 20px 0px;
+}
